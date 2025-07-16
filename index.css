@@ -1,0 +1,108 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Стилізація навігації */
+.navbar {
+    display: flex;
+    align-items: center;      /* вертикальне вирівнювання */
+    justify-content: space-between; /* простір між логотипом і посиланнями */
+    /* background-color: #ff7700; */
+    padding: 10px 20px;
+}
+
+/* Логотип */
+.logo {
+    height: 40px;
+}
+
+/* Посилання */
+.navbar a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+/* Ховер ефект */
+.navbar a:hover {
+    color: #000000;
+}
+
+
+/* Загальні стилі */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Контейнер для навігації та hero */
+.header {
+    display: flex;
+    flex-direction: column; /* Вирівнюємо по вертикалі */
+    background-image: url('./images/bg.jpg'); /* Тут можна замінити на своє зображення */
+    background-size: cover;
+    background-position: center;
+}
+
+/* Навігація */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #333333ae;
+    padding: 10px 20px;
+}
+
+/* Логотип */
+.logo {
+    height: 70px;
+}
+
+/* Посилання в навігації */
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+/* Ховер ефект для посилань */
+.navbar a:hover {
+    color: #ffcc00;
+}
+
+/* Hero секція */
+.hero {
+    
+    color: white;
+    text-align: center;
+    padding: 100px 20px; /* відступи для кращого вигляду */
+}
+
+.hero h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.hero button {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #ffcc00;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Ховер для кнопки */
+.hero button:hover {
+    background-color: #ff9900;
+}
