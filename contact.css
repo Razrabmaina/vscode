@@ -1,8 +1,35 @@
 .contact {
-    width: 300px;
+    width: 700px;
     border: 1px solid #7e4a05;
     padding: 15px;
     border-radius: 8px;
-    background-color: #e0a251;
+    background-color: #975f16;
     text-align: center;
+    
+    
+}
+
+h1, h2 {
+    color: #bea470;
+}
+
+.a {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+
+}
+
+.navbar {
+    background-color: #312009;
+}
+
+.contacts{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    background-color: #312009
 }
