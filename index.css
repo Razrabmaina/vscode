@@ -106,3 +106,41 @@ body {
 .hero button:hover {
     background-color: #ff9900;
 }
+
+h2{
+    text-align: center;
+}
+
+.item img{
+    width: 50px;
+    margin-top: 5px;
+}
+
+.item{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    width: 500px;
+    gap: 15px;
+    border-radius: 8px;
+  box-shadow: 0 5px 6px rgba(0, 0, 0, 0.1); /* легка тінь */
+  padding: 5px;
+}
+
+.text{
+   display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column; 
+}
+
+.text>*{
+    margin: 2px;
+}
+
+.revuse{
+    padding: 20px;
+     display: flex;
+    align-items: center;
+    justify-content: center;
+}
