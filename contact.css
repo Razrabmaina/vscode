@@ -22,7 +22,7 @@ h1, h2 {
 
 }
 
-.navbar {
+body {
     background-color: #312009;
 }
 
@@ -32,4 +32,12 @@ h1, h2 {
     align-items: center;
     height: 80vh;
     background-color: #312009
+}
+
+footer {
+    background-color: rgb(58, 24, 9);
+}
+
+p {
+    color:rgb(255, 255, 255)
 }

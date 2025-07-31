@@ -1,9 +1,11 @@
 .navbar {
-    background-color: #312009;  
+    background-color: #312009;
 }
+
 a {
     text-align: center;
 }
+
 .coffee-list {
     display: flex;
     justify-content: center;
@@ -28,11 +30,14 @@ a {
 
     object-fit: cover;
 }
-h2, p {
-    color:white
+
+h2,
+p {
+    color: white
 }
+
 body {
-background-color: #4b2d07;
+    background-color: #4b2d07;
 }
 
 .kava {
@@ -47,6 +52,108 @@ background-color: #4b2d07;
     font-size: 20px;
 }
 
-h1{
+h1 {
     margin-top: 0;
+}
+
+span {
+    background-color: rgb(47, 167, 20);
+    color: #ffffff;
+    font-weight: 800;
+}
+
+/*  */
+.coffee-item span {
+    display: block;
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+.coffee-item button {
+    padding: 8px 15px;
+    background-color: #7b3f00;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.coffee-item button:hover {
+    background-color: #5c2d00;
+}
+
+#cart {
+    position: fixed;
+    top: 120px;
+    left: 20px;
+    background-color: white;
+    border: 2px solid #7b3f00;
+    padding: 15px;
+    border-radius: 10px;
+    max-width: 320px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    z-index: 100;
+}
+
+#cart h3 {
+    margin-top: 0;
+    text-align: center;
+    color: #7b3f00;
+}
+
+#cart ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 10px 0;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+#cart li {
+    margin-bottom: 8px;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.remove-btn {
+    background-color: crimson;
+    color: white;
+    border: none;
+    padding: 2px 8px;
+    border-radius: 4px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+#total {
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px;
+}
+
+#table-number {
+    width: 90%;
+    margin: 10px auto;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: block;
+}
+
+#order-btn {
+    display: block;
+    width: 90%;
+    margin: 10px auto 0 auto;
+    padding: 8px;
+    background-color: #008800;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+#order-btn:hover {
+    background-color: #006600;
 }

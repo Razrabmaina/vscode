@@ -19,63 +19,91 @@
         </div>
     </nav>
 
-    
+
+
+    <div id="cart">
+        <h3>Кошик</h3>
+        <ul id="cart-list"></ul>
+        <div id="total">Загалом: $0.00</div>
+        <input type="text" id="table-number" placeholder="Номер столика">
+        <button id="order-btn" onclick="placeOrder()">Оформити замовлення</button>
+    </div>
     <main>
         <h1 class="kava">Розділ Кава</h1>
         <p class="kavo">Ласкаво просимо до нашого асортименту кави!</p>
 
         <section class="coffee-list">
             <article class="coffee-item">
-                <img src="https://www.nescafe.com/ua/sites/default/files/2023-04/RecipeHero_CaramelLatte_1066x1066.jpg" alt="Кава 1">
+                <img src="https://www.nescafe.com/ua/sites/default/files/2023-04/RecipeHero_CaramelLatte_1066x1066.jpg"
+                    alt="Латте">
                 <h2>ЛАТЕ</h2>
                 <p>Ніжний смак з ароматом персикового джему.</p>
+                <span>Ціна: $1.20</span>
+                <button onclick="addToCart('Латте', 1.20)">Купити</button>
             </article>
 
             <article class="coffee-item">
-                <img src="https://image.freepik.com/free-photo/italian-cappuccino-with-decoration_159805-806.jpg" alt="Кава 2">
+                <img src="https://image.freepik.com/free-photo/italian-cappuccino-with-decoration_159805-806.jpg"
+                    alt="Капучіно">
                 <h2>КАПУЧІНО</h2>
-                <p>наші клієнти вибирають його найчатстіше.</p>
+                <p>Наші клієнти вибирають його найчастіше.</p>
+                <span>Ціна: $1.00</span>
+                <button onclick="addToCart('Капучіно', 1.00)">Купити</button>
             </article>
 
             <article class="coffee-item">
-                <img src="https://images.prom.ua/1100745831_w600_h600_retsept-kavi-po-italijski.jpg" alt="Кава 2">
-                <h2>ІТАЛЬЯНСЬКА КАВА</h2>
-                <p>кава Італьянського походження.</p>
+                <img src="https://images.prom.ua/1100745831_w600_h600_retsept-kavi-po-italijski.jpg"
+                    alt="Італійська кава">
+                <h2>ІТАЛІЙСЬКА КАВА</h2>
+                <p>Кава італійського походження.</p>
+                <span>Ціна: $1.50</span>
+                <button onclick="addToCart('Італійська кава', 1.50)">Купити</button>
             </article>
 
             <article class="coffee-item">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDNTBor_iifjg3iRGlmGLsnQPyVp1r1aQHhg&s" alt="Кава 2">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDNTBor_iifjg3iRGlmGLsnQPyVp1r1aQHhg&s"
+                    alt="Американо">
                 <h2>АМЕРИКАНО</h2>
-                <p>золотий стандарт для покупців.</p>
+                <p>Золотий стандарт для покупців.</p>
+                <span>Ціна: $1.20</span>
+                <button onclick="addToCart('Американо', 1.20)">Купити</button>
+            </article>
+        </section>
+
+        <h1 class="kava">До кави</h1>
+        <h2 class="kavo">Доповнення до кави</h2>
+
+        <section class="coffee-list">
+            <article class="coffee-item">
+                <img src="https://likelida.com/content/uploads/2016/03/image-19.jpeg" alt="Суфле">
+                <h2>СУФЛЕ</h2>
+                <p>Суфле з шоколадом і малиною.</p>
+                <span>Ціна: $1.70</span>
+                <button onclick="addToCart('Суфле', 1.70)">Купити</button>
             </article>
 
+            <article class="coffee-item">
+                <img src="https://roll-club.dp.ua/wp-content/uploads/2023/05/5-2.jpg" alt="Піца Пепероні">
+                <h2>ПІЦА ПЕПЕРОНІ</h2>
+                <p>Піца з салямі і грибами з соусом сацебелі.</p>
+                <span>Ціна: $3.40</span>
+                <button onclick="addToCart('Піца Пепероні', 3.40)">Купити</button>
+            </article>
 
+            <article class="coffee-item">
+                <img src="https://la-torta.ua/content/uploads/images/12-cake.jpg" alt="Чізкейк">
+                <h2>ЧІЗКЕЙК</h2>
+                <p>Чізкейк з полуничним сиропом.</p>
+                <span>Ціна: $2.00</span>
+                <button onclick="addToCart('Чізкейк', 2.00)">Купити</button>
+            </article>
         </section>
     </main>
-    <main>
-        <h1 class="kava">До кави</h1>
-        <h2 class="kavo">доповнення до кави.</h2>
-        
-        <section class="coffee-list">
-        <article class="coffee-item">
-                <img src="https://likelida.com/content/uploads/2016/03/image-19.jpeg" alt="Кава 2">
-                <h2>СУФЛЕ</h2>
-                <p>суфле з шоколадом і малиною.</p>
-            </article>
 
-            <article class="coffee-item">
-                <img src="https://roll-club.dp.ua/wp-content/uploads/2023/05/5-2.jpg" alt="Кава 2">
-                <h2>ПІЦА ПЕПЕРОНІ</h2>
-                <p>піца з салямі і грибами з соусом сацебелі.</p>
-            </article>
+    <script src="./catalog.js"> </script>
 
-            <article class="coffee-item">
-                <img src="https://la-torta.ua/content/uploads/images/12-cake.jpg" alt="Кава 2">
-                <h2>ЧІСКЕЙК</h2>
-                <p>чіскейк з клубнічним сиропом.</p>
-            </article>
 
-           
+
 </body>
 
 </html>
