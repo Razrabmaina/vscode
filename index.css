@@ -77,7 +77,7 @@ body {
 
 /* Hero секція */
 .hero {
-    
+    margin-bottom: 100px;
     color: white;
     text-align: center;
     padding: 100px 20px; /* відступи для кращого вигляду */
@@ -126,6 +126,8 @@ h2{
     border-radius: 8px;
   box-shadow: 0 5px 6px rgba(0, 0, 0, 0.1); /* легка тінь */
   padding: 5px;
+  background-color: #ffffff;
+  height: 100px;
 }
 
 .text{
@@ -144,5 +146,59 @@ h2{
      display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
+.vidgyk{
+    background-color: #571c1cae;
+
+}
+
+.vidstup{
+    margin-top:0 ;
+    padding-top: 15px;
+}
+
+.container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 30px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color:#333333ae;
+      color: aliceblue;
+      
+     
+    }
+
+    .image {
+      flex-shrink: 0;
+    }
+
+    .image img {
+      max-width: 500px;
+      height: auto;
+      display: block;
+    }
+
+   
+    
+
+    footer{
+      background-color:  #571c1c9c;
+        margin-top:0 ;
+       padding-top: 15px;
+       color:  #ffffff;
+    }
+
+.footer{
+   
+}
+
+.tyu{
+    text-align: center;
+}
+
+ 
